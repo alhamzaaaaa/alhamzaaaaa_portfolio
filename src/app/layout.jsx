@@ -47,7 +47,7 @@ export default function RootLayout({ children, }) {
           swirl={0.28}
           tail={0.45}
           trail={2}
-          wander={2}
+          wander={3}
           depth={0.5}
           idle="roam"
           clickEffect="pulse"
