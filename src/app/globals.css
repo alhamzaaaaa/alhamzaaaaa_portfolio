@@ -1,0 +1,293 @@
+/* ========================================
+   TAILWIND CSS
+======================================== */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* ========================================
+   GLOBAL DESIGN SYSTEM
+======================================== */
+
+@theme inline {
+  /* Font families */
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-climate-crisis);
+  --font-script: var(--font-imperial-script);
+  --font-heading: var(--font-manrope);
+
+  /* Brand typography colours */
+  --color-gold: #FFBE0B;
+  --color-champagne: #F0C986;
+  --color-ivory: #FFF8E6;
+
+  /* Typography scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Display typography */
+  --text-hero: clamp(3.5rem, 8vw, 8rem);
+  --text-display: clamp(2.5rem, 5vw, 5rem);
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Letter spacing */
+  --tracking-tight: -0.04em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.08em;
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Layout spacing */
+  --spacing-section: clamp(5rem, 10vw, 10rem);
+  --spacing-section-sm: clamp(3rem, 6vw, 6rem);
+  --spacing-gutter: clamp(1.25rem, 5vw, 5rem);
+
+  /* Content spacing */
+  --spacing-content: 1.5rem;
+  --spacing-content-lg: 3rem;
+
+  /* Container widths */
+  --container-content: 80rem;
+  --container-wide: 90rem;
+
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-2xl: 2.5rem;
+  --radius-full: 9999px;
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgb(0 0 0 / 5%);
+  --shadow-elevated: 0 12px 40px rgb(0 0 0 / 8%);
+  --shadow-glass: 0 8px 32px rgb(0 0 0 / 8%);
+
+  /* Border widths */
+  --border-width-thin: 1px;
+  --border-width-medium: 1.5px;
+
+  /* Animation durations */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* Easing curves */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* shadcn sidebar mappings */
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  /* Chart mappings */
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+
+  /* shadcn colour mappings */
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+}
+
+/* ========================================
+   COLOUR SYSTEM
+   BURGUNDY × BURNISHED GOLD × IVORY
+======================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* Main colours */
+  --background: #160B10;
+  --foreground: #FFF8E6;
+
+  /* Surfaces */
+  --card: #27151B;
+  --card-foreground: #FFF8E6;
+
+  --popover: #27151B;
+  --popover-foreground: #FFF8E6;
+
+  /* Brand */
+  --primary: #FFBE0B;
+  --primary-foreground: #24130D;
+
+  --secondary: #45232A;
+  --secondary-foreground: #F0C986;
+
+  /* Supporting colours */
+  --muted: #352027;
+  --muted-foreground: #F0C986;
+
+  --accent: #55302D;
+  --accent-foreground: #FFF8E6;
+
+  --destructive: #DC4545;
+
+  /* Borders and inputs */
+  --border: rgba(255, 248, 230, 0.12);
+  --input: rgba(255, 248, 230, 0.15);
+  --ring: #FFBE0B;
+
+  /* Charts */
+  --chart-1: #FFBE0B;
+  --chart-2: #F0C986;
+  --chart-3: #A85D45;
+  --chart-4: #8B3A50;
+  --chart-5: #6F293C;
+
+  /* Radius */
+  --radius: 0.625rem;
+
+  /* Sidebar */
+  --sidebar: #1D1016;
+  --sidebar-foreground: #FFF8E6;
+  --sidebar-primary: #FFBE0B;
+  --sidebar-primary-foreground: #24130D;
+  --sidebar-accent: #45232A;
+  --sidebar-accent-foreground: #F0C986;
+  --sidebar-border: rgba(255, 248, 230, 0.12);
+  --sidebar-ring: #FFBE0B;
+}
+
+/* ========================================
+   BASE STYLES
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #160B10;
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+
+  background:
+    radial-gradient(ellipse at 15% 0%,
+      rgba(115, 55, 42, 0.38),
+      transparent 45%),
+    radial-gradient(ellipse at 85% 35%,
+      rgba(91, 29, 48, 0.32),
+      transparent 48%),
+    radial-gradient(ellipse at 50% 100%,
+      rgba(76, 39, 29, 0.25),
+      transparent 50%),
+    linear-gradient(135deg,
+      #160B10 0%,
+      #271016 40%,
+      #351820 70%,
+      #170C11 100%);
+
+  background-attachment: fixed;
+}
+
+/* Text selection */
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Default typography colours */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-gold);
+}
+
+p {
+  color: var(--color-ivory);
+}
+
+.text-highlight {
+  color: var(--color-champagne);
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ========================================
+   TAILWIND BASE LAYER
+======================================== */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply text-foreground;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
