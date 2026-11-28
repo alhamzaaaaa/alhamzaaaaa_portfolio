@@ -25,14 +25,14 @@ export default function Hero() {
                     make complex work simpler, clearer, and more reliable.
                 </p>
 
-                <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
+                <div className="mt-7 sm:mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
                     <a
                         href="https://linkedin.com/in/ameer-hamza-ansari-6260912b7"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex min-h-12 items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] px-6 py-3 text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
+                        className="group inline-flex min-h-10 sm:min-h-12 items-center gap-2 sm:gap-3 rounded-full border border-white/15 bg-white/[0.07] px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
                     >
-                        <FaLinkedinIn className="size-[18px] transition-transform duration-300 group-hover:scale-110" />
+                        <FaLinkedinIn className="size-4 sm:size-[18px] transition-transform duration-300 group-hover:scale-110" />
                         LinkedIn
                     </a>
 
@@ -40,9 +40,9 @@ export default function Hero() {
                         href="https://github.com/alhamzaaaaa"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex min-h-12 items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] px-6 py-3 text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
+                        className="group inline-flex min-h-10 sm:min-h-12 items-center gap-2 sm:gap-3 rounded-full border border-white/15 bg-white/[0.07] px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
                     >
-                        <FaGithub className="size-[18px] transition-transform duration-300 group-hover:scale-110" />
+                        <FaGithub className="size-4 sm:size-[18px] transition-transform duration-300 group-hover:scale-110" />
                         GitHub
                     </a>
                 </div>
