@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Hero() {
     return (
@@ -26,17 +27,23 @@ export default function Hero() {
 
                 <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
                     <a
-                        href="/projects"
-                        className="inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-sm sm:px-7"
+                        href="https://linkedin.com/in/ameer-hamza-ansari-6260912b7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex min-h-12 items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] px-6 py-3 text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
                     >
-                        Explore My Work
+                        <FaLinkedinIn className="size-[18px] transition-transform duration-300 group-hover:scale-110" />
+                        LinkedIn
                     </a>
 
                     <a
-                        href="/contact"
-                        className="inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-sm sm:px-7"
+                        href="https://github.com/alhamzaaaaa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex min-h-12 items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] px-6 py-3 text-sm font-medium text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.13] hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
                     >
-                        Let&apos;s Connect
+                        <FaGithub className="size-[18px] transition-transform duration-300 group-hover:scale-110" />
+                        GitHub
                     </a>
                 </div>
             </div>
