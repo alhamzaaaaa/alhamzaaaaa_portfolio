@@ -143,8 +143,8 @@
   color-scheme: dark;
 
   /* Main colours */
-  --background: #160B10;
-  --foreground: #FFF8E6;
+  --background: #120C11;
+  --foreground: #F5EFE5;
 
   /* Surfaces */
   --card: #27151B;
@@ -154,17 +154,17 @@
   --popover-foreground: #FFF8E6;
 
   /* Brand */
-  --primary: #FFBE0B;
+  --primary: #DDBB78;
   --primary-foreground: #24130D;
 
-  --secondary: #45232A;
+  --secondary: #3D2932;
   --secondary-foreground: #F0C986;
 
   /* Supporting colours */
-  --muted: #352027;
+  --muted: #2B2028;
   --muted-foreground: #F0C986;
 
-  --accent: #55302D;
+  --accent: #704650;
   --accent-foreground: #FFF8E6;
 
   --destructive: #DC4545;
