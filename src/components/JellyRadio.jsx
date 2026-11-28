@@ -146,7 +146,7 @@ const JellyRadio = ({ items = DEFAULT_ITEMS, value, defaultValue, onChange, chip
         commit(next, true);
         groupRef.current?.querySelectorAll('button')[next]?.focus();
     };
-    return (<div ref={groupRef} role="radiogroup" aria-label={ariaLabel} data-disabled={disabled ? '' : undefined} className={`group inline-flex items-center select-none [-webkit-touch-callout:none] gap-[var(--jr-gap)] px-[var(--jr-pad-x)] py-[var(--jr-pad-y)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50${className ? ` ${className}` : ''}`} style={{
+    return (<div ref={groupRef} role="radiogroup" aria-label={ariaLabel} data-disabled={disabled ? '' : undefined} className={`group inline-flex w-max min-w-max items-center select-none gap-[var(--jr-gap)] px-[var(--jr-pad-x)] py-[var(--jr-pad-y)] ${className ? ` ${className}` : ''}`} style={{
         '--jr-chip': chipColor,
         '--jr-active': activeColor,
         '--jr-text': textColor,

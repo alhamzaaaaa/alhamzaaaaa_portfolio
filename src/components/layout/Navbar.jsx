@@ -57,7 +57,7 @@ export default function Navbar() {
                 >
                     <nav
                         aria-label="Main navigation"
-                        className="flex h-full w-full items-center justify-center overflow-hidden px-1 sm:px-2"
+                        className="flex h-full w-full items-center justify-start overflow-x-auto overflow-y-hidden px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:justify-center"
                     >
                         <JellyRadio
                             className="mx-auto w-full min-w-0"
